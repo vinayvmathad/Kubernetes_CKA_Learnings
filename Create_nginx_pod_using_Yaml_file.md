@@ -290,32 +290,3 @@ kubectl decribe pod                # Typo (decribe instead of describe)
 kubectl exec -it nginx-pod --sh    # Incorrect flag usage
 kubectl get pods --o wide          # Incorrect flag (--o instead of -o)
 ```
-
----
-
-## 🧠 Summary of Commands
-
-```bash
-kind --version
-notepad config.yaml
-kubectl create -f config.yaml
-kubectl cluster-info
-kind create cluster
-kubectl get nodes
-kubectl get pods
-kubectl describe pod nginx-pod
-kubectl exec -it nginx-pod -- sh
-kubectl run nginx --image=nginx --dry-run=client -o yaml > pod.yaml
-kubectl get pods nginx-pod --show-labels
-kubectl get pods -o wide
-kubectl get node -o wide
-kubectl get nodes
-```
-
----
-
-**Author:** Vinay M
-**Environment:** Windows PowerShell + Kind (Kubernetes v1.34.0)
-**Date:** November 6, 2025
-**Repository:** `Certified_K8S_Administrator_Learnings`
-
